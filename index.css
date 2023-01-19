@@ -1,0 +1,64 @@
+body {
+    background:none;
+}
+
+.Alive input[type="radio"]{
+    appearance: none;
+    border: 5px solid #0db10d;
+    border-radius: 100%;
+    outline: 1px solid rgb(146, 146, 146);
+    animation: alive_anima 4s infinite;
+}
+
+@keyframes alive_anima{
+    0%  {border: 5px solid #128812; box-shadow:0px 0px 5px #1ec033;}
+    50% {border: 5px solid #03ff03; box-shadow:0px 0px 20px #1ec033;}
+    100%{border: 5px solid #128812; box-shadow:0px 0px 5px #1ec033;}
+}
+
+.Dead input[type="radio"]{
+    appearance: none;
+    border: 5px solid #b10d0d;
+    border-radius: 100%;
+    outline: 1px solid rgb(146, 146, 146);
+    animation: dead_anima 4s infinite;
+}
+
+@keyframes dead_anima{
+    0%  {border: 5px solid #881212; box-shadow:0px 0px 5px #c01e1e;}
+    50% {border: 5px solid #ff0303; box-shadow:0px 0px 20px #c01e1e;}
+    100%{border: 5px solid #881212; box-shadow:0px 0px 5px #c01e1e;}
+}
+
+.unknown input[type="radio"]{
+    appearance: none;
+    border: 5px solid #ffee03;
+    border-radius: 100%;
+    outline: 1px solid rgb(146, 146, 146);
+    animation: unknown_anima 4s infinite;
+}
+
+@keyframes unknown_anima{
+    0%  {border: 5px solid #886c12; box-shadow:0px 0px 5px #887c12;}
+    50% {border: 5px solid #ffee03; box-shadow:0px 0px 20px #ffee03;}
+    100%{border: 5px solid #887c12; box-shadow:0px 0px 5px #887c12;}
+}
+
+.card {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.425);
+    width: 450px;
+    height: 200px;
+    margin-bottom: 2%;
+}
+
+.card > img {
+    display: block;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+}
+
+.details {
+    display: inline-block;
+}

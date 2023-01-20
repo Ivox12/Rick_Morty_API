@@ -1,8 +1,13 @@
 body {
-    background:none;
+    background:url(src/img/portalbackground.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: 120px;
 }
 
 .Alive input[type="radio"]{
+    margin-left: 5%;
     appearance: none;
     border: 5px solid #0db10d;
     border-radius: 100%;
@@ -17,6 +22,7 @@ body {
 }
 
 .Dead input[type="radio"]{
+    margin-left: 5%;
     appearance: none;
     border: 5px solid #b10d0d;
     border-radius: 100%;
@@ -31,6 +37,7 @@ body {
 }
 
 .unknown input[type="radio"]{
+    margin-left: 5%;
     appearance: none;
     border: 5px solid #ffee03;
     border-radius: 100%;
@@ -44,21 +51,78 @@ body {
     100%{border: 5px solid #887c12; box-shadow:0px 0px 5px #887c12;}
 }
 
-.card {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.425);
-    width: 450px;
-    height: 200px;
-    margin-bottom: 2%;
+@font-face {
+    font-family: "rick_font";
+    src: url(src/get_schwifty.ttf);
 }
 
-.card > img {
-    display: block;
+#click_here {
+    text-align: center;
+    font-family: "rick_font";
+    color: #0db1a3;
+    font-size: 80px;
+    text-shadow: 2px 2px 2px #0ee04d;
+    margin-bottom: -1%;
+
+}
+
+.quadradao{
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+   color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: space-evenly;
+    margin: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+    /* From https://css.glass */
+    background: rgba(48, 48, 48, 0.849);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(11, 11, 11, 0.08);
+        
+}
+
+#portal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    width: 120px;
-    height: 120px;
+    width: auto;
+    height: auto;
+}
+
+img {
+    width: auto;
+    min-height: 10.3em;
+    max-height: 180px;
+}
+
+.card{
+    width: 250px;
+    height: auto;
+    padding-bottom: 3%;
+    
+}
+
+.name {
+    text-align: center;
 }
 
 .details {
-    display: inline-block;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+
+#more {
+    display: none;
+    margin: auto;
 }

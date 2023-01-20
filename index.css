@@ -25,7 +25,6 @@ body {
     appearance: none;
     border: 5px solid #b10d0d;
     border-radius: 100%;
-    outline: 1px solid rgb(146, 146, 146);
     animation: dead_anima 4s infinite;
 }
 
@@ -40,7 +39,6 @@ body {
     appearance: none;
     border: 5px solid #ffee03;
     border-radius: 100%;
-    outline: 1px solid rgb(146, 146, 146);
     animation: unknown_anima 4s infinite;
 }
 
